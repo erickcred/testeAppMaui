@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OficinaApp.Pages.UsuarioCadastroPage"
+             Title="UsuarioCadastroPage">
+  <StackLayout 
+  VerticalOptions="CenterAndExpand"
+  Padding="20, 0">
+    <Label 
+      Text="Registre-se"
+      FontSize="20"
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+
+    <Label
+      Text="Nome"
+      FontSize="16"
+      FontAttributes="Bold"/>
+    <Entry
+      Placeholder="Digite o seu Nome"
+      x:Name="txtNome" />
+
+    <Label
+      Text="E-mail"
+      FontSize="16"
+      FontAttributes="Bold"/>
+    <Entry
+      Placeholder="Digite o seu E-mail"
+      x:Name="txtEmail" />
+
+    <Label
+      Text="Senha"
+      FontSize="16"
+      FontAttributes="Bold"/>
+    <Entry
+      Placeholder="Digite sua Senha"
+      x:Name="txtSenha" />
+
+    <Button
+      Text="Cadastrar"
+      x:Name="btnCadastrar"
+      FontSize="16"
+      FontAttributes="Bold"
+      Margin="0, 16"
+      Clicked="btnCadastrar_Clicked" />
+
+  </StackLayout>
+</ContentPage>
